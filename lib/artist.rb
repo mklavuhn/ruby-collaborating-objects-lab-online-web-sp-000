@@ -18,14 +18,14 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    self.find(name)? self.find(name) : self.create(name)
+    self.find_s(name)? self.find_s(name) : self.create_s(name)
   end
   
-  def self.find(name)
+  def self.find_s(name)
     self.all.name {|artist| self.artist == name}
   end
   
-  def self.create(name)
+  def self.create_s(name)
     self.all.find(name).tap {|artist| artist.save}
   end
   
