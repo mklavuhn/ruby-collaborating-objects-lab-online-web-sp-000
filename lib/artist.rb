@@ -31,7 +31,7 @@ class Artist
   end
   
   def self.create(name)
-    self.all.find(name).tap {|
+    self.all.find(name).tap {|artist|
     
     
   
