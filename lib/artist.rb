@@ -27,7 +27,7 @@ class Artist
   end
   
   def self.create_s(name)
-    self.all.find(name).tap {|artist| artist.save}
+    self.new(name).tap {|artist| artist.save}
   end
   
   def save 
