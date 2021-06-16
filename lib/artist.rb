@@ -24,6 +24,13 @@ class Artist
   
   def self.find_or_create_by_name(name)
     
+  end
+  
+  def self.find(name)
+    
+  end
+  
+  def self.create(name)
     
     
   
