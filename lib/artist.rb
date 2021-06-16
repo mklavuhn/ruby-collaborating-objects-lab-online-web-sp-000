@@ -30,6 +30,11 @@ class Artist
     self.all.find(name).tap {|artist| artist.save}
   end
   
+  def save 
+    @@all << self
+  end
+  
+  
     
     
   
