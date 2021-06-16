@@ -7,10 +7,15 @@ class Song
   def initialize(name)
     @name = name 
     @@all << self 
+    save
   end
   
   def self.all 
     @@all 
+  end
+  
+  def save 
+    @@all << self 
   end
   
   
